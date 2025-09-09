@@ -1,0 +1,19 @@
+# Archivos generados por compilación
+/build/
+/out/
+/target/
+
+# -------------------------
+# IntelliJ IDEA
+# -------------------------
+.idea/
+
+# -------------------------
+# NetBeans
+# -------------------------
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
