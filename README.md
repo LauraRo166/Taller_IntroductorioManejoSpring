@@ -17,7 +17,7 @@ Para ilustrar el uso del framework Spring, y el ambiente de desarrollo para el u
 
 Abrimos el proyecto en Apache NetBeans:
 
-{Imagen en NetBeans}
+<img width="921" height="492" alt="image" src="https://github.com/user-attachments/assets/07ac1376-2dad-445f-a04d-fa034301a126" />
 
 
 *2. Revise el archivo de configuración de Spring ya incluido en el proyecto (src/main/resources). El mismo indica que Spring buscará automáticamente los 'Beans' disponibles en el paquete indicado.*
@@ -27,7 +27,8 @@ todas las clases dentro del paquete `edu.eci.arsw` y sus subpaquetes. Cualquier 
 ese paquete que esté anotada con `@Component`, `@Service`, `@Repository` o `@Controller` será registrada 
 como un Bean en el ApplicationContext.
 
-{Imagen applicationContext}
+<img width="921" height="491" alt="image" src="https://github.com/user-attachments/assets/54fde230-5bde-4d2f-bf0d-41b310c0facf" />
+
 
 *3. Haciendo uso de la [configuración de Spring basada en anotaciones](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-spring-beans-and-dependency-injection.html) marque con las anotaciones @Autowired y @Service las dependencias que deben inyectarse, y los 'beans' candidatos a ser inyectadas -respectivamente-:*
 
@@ -107,6 +108,7 @@ la clase con la primera letra en minúscula
 	SpellChecker sc;
 ```
 
+
 *4.	Haga un programa de prueba, donde se cree una instancia de GrammarChecker mediante Spring, y se haga uso de la misma:*
 
 ```java
@@ -119,7 +121,8 @@ la clase con la primera letra en minúscula
 
 Al ejecutar la clase main obtenemos la siguiente salida:
 
-{Salida con english}
+<img width="921" height="152" alt="image" src="https://github.com/user-attachments/assets/a01009a5-724f-428c-aae0-62ab29101add" />
+
 
 *5. Modifique la configuración con anotaciones para que el Bean ‘GrammarChecker‘ ahora haga uso de la clase SpanishSpellChecker (para que a GrammarChecker se le inyecte EnglishSpellChecker en lugar de  SpanishSpellChecker. Verifique el nuevo resultado.*
 
@@ -133,5 +136,4 @@ Modificamos en la clase `GrammarChecker` la etiqueta `@Qualifier("englishSpellCh
 
 Ejecutamos y obtenemos el siguiente resultado:
 
-
-
+<img width="921" height="119" alt="image" src="https://github.com/user-attachments/assets/56c9cbdd-c8b3-4015-9b6f-46ee358b6d7d" />
